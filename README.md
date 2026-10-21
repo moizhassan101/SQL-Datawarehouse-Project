@@ -18,9 +18,9 @@ The warehouse follows the **Medallion architecture**: each layer only reads from
 
 | Layer || Purpose || Load pattern |
 
-| **Bronze** | Raw landing zone — tables mirror the source CSVs exactly, no transformation | Full truncate + `BULK INSERT` via `bronze.load_bronze` |
-| **Silver** | Cleaned, deduplicated, standardized, business rules applied, source-system fields reconciled | Full truncate + reload via `silver.load_silver` |
-| **Gold** | Business-ready star schema — dimension and fact **views** combining Silver tables | Views (no physical load — always reflects current Silver data) |
+| **Bronze** || Raw landing zone — tables mirror the source CSVs exactly, no transformation || Full truncate + `BULK INSERT` via `bronze.load_bronze` |
+| **Silver** || Cleaned, deduplicated, standardized, business rules applied, source-system fields reconciled || Full truncate + reload via `silver.load_silver` |
+| **Gold** || Business-ready star schema — dimension and fact **views** combining Silver tables || Views (no physical load — always reflects current Silver data) |
 
 ---
 
@@ -177,10 +177,12 @@ SQL-Datawarehouse-Project/
 
 ---
 
+## Architectural Diagram
 <p align="center"> <img src="https://img.shields.io/badge/SQL_Server-T--SQL-CC2927?logo=microsoftsqlserver&logoColor=white" /> <img src="https://img.shields.io/badge/Architecture-Medallion_(Bronze/Silver/Gold)-C9A227" /> <img src="https://img.shields.io/badge/Pattern-Star_Schema-2E8B57" /> <img src="https://img.shields.io/badge/License-MIT-blue" /> </p> <h1 align="center">🏗️ SQL Data Warehouse Project</h1> <p align="center"><b>A SQL Server data warehouse that turns raw CRM + ERP CSV exports into a clean, query-ready star schema — built end-to-end with hand-written DDL, stored procedures, and data-quality checks.</b></p> <p align="center"> 📺 <a href="#-video-walkthrough"><b>Watch the 3-minute walkthrough</b></a> · 📐 <a href="#-architecture">Architecture</a> · 🗂️ <a href="#-data-model-gold-layer">Data Model</a> · 🚀 <a href="#-how-to-run-it">How to Run</a> </p>
 
 ---
 
+## Data Model
 <img width="596" height="633" alt="image" src="https://github.com/user-attachments/assets/78e35c38-a120-42be-8846-de40e0086e93" />
 
 ---
@@ -188,6 +190,8 @@ SQL-Datawarehouse-Project/
 ## Tech Stack
 
 `Microsoft SQL Server` · `T-SQL` · `SSMS` · `Git`
+
+---
 
 ## Author
 
