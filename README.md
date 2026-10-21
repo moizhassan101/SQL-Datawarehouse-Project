@@ -1,3 +1,7 @@
+<p align="center"> <img src="https://img.shields.io/badge/SQL_Server-T--SQL-CC2927?logo=microsoftsqlserver&logoColor=white" /> <img src="https://img.shields.io/badge/Architecture-Medallion_(Bronze/Silver/Gold)-C9A227" /> <img src="https://img.shields.io/badge/Pattern-Star_Schema-2E8B57" /> <img src="https://img.shields.io/badge/License-MIT-blue" /> </p> <h1 align="center">SQL Data Warehouse Project</h1> <p align="center"><b>A SQL Server data warehouse that turns raw CRM + ERP CSV exports into a clean, query-ready star schema — built end-to-end with hand-written DDL, stored procedures, and data-quality checks.</b></p> <p align="center"> · <a href="#-architecture">Architecture</a> · <a href="#-data-model-gold-layer">Data Model</a> · <a href="#-how-to-run-it">How to Run</a> </p>
+
+---
+
 ## Overview
 
 This project consolidates sales data from two independent, messy source systems — a **CRM** and an **ERP** — into a single SQL Server data warehouse using a **Bronze → Silver → Gold (Medallion) architecture**. It's the full pipeline: raw ingestion, data cleaning and business-rule enforcement, and a final star schema built for analytics.
@@ -174,11 +178,6 @@ SQL-Datawarehouse-Project/
    GROUP BY c.country
    ORDER BY total_sales DESC;
    ```
-
----
-
-## Architectural Diagram
-<p align="center"> <img src="https://img.shields.io/badge/SQL_Server-T--SQL-CC2927?logo=microsoftsqlserver&logoColor=white" /> <img src="https://img.shields.io/badge/Architecture-Medallion_(Bronze/Silver/Gold)-C9A227" /> <img src="https://img.shields.io/badge/Pattern-Star_Schema-2E8B57" /> <img src="https://img.shields.io/badge/License-MIT-blue" /> </p> <h1 align="center">🏗️ SQL Data Warehouse Project</h1> <p align="center"><b>A SQL Server data warehouse that turns raw CRM + ERP CSV exports into a clean, query-ready star schema — built end-to-end with hand-written DDL, stored procedures, and data-quality checks.</b></p> <p align="center"> · <a href="#-architecture">Architecture</a> · <a href="#-data-model-gold-layer">Data Model</a> · <a href="#-how-to-run-it">How to Run</a> </p>
 
 ---
 
