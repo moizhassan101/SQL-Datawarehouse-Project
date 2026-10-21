@@ -32,6 +32,8 @@ The warehouse follows the **Medallion architecture**: each layer only reads from
 
 The Gold layer exposes a classic **star schema**: one fact table surrounded by conformed dimensions, each with a `ROW_NUMBER()`-generated surrogate key. The data model's image can be found at the end of the document.
 
+<img width="596" height="633" alt="image" src="https://github.com/user-attachments/assets/78e35c38-a120-42be-8846-de40e0086e93" />
+
 <details>
 <summary><b>Interesting modeling decisions (click to expand)</b></summary>
 
@@ -178,11 +180,6 @@ SQL-Datawarehouse-Project/
    GROUP BY c.country
    ORDER BY total_sales DESC;
    ```
-
----
-
-## Data Model
-<img width="596" height="633" alt="image" src="https://github.com/user-attachments/assets/78e35c38-a120-42be-8846-de40e0086e93" />
 
 ---
 
